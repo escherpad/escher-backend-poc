@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./socketServer.js",
-    "start-db": "rethinkdb"
+    "start-db": "rethinkdb",
+    "test": "mocha simple-test.js --debug-brk true --R spec --colors --istanbul"
   },
   "dependencies": {
     "body-parser": "~1.13.2",

@@ -13,7 +13,8 @@ each step very carefully.
 
 The chat client to this backend can be found at [escher](https://github.com/episodeyang/escher)
 
-## To run
+## Usage
+### To run
 
 ```
 npm run start-db
@@ -23,4 +24,10 @@ Then in a new console window run
 
 ```
 npm run start
+```
+
+### To develop (and test)
+first install mocha.
+```
+npm install -g mocha@latest
 ```
