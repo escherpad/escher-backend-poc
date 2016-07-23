@@ -1,0 +1,15 @@
+# webStorm files
+.idea
+
+# build files
+build
+
+# node files
+*.log
+*.logs
+*~
+node_modules
+.DS_Store
+
+# local test database files
+rethinkdb_data
