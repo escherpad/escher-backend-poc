@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 
@@ -16,8 +17,20 @@ func main() {
 		log.Println("on connection")
 		so.Join("chat")
 		so.On("chat message", func(msg string) {
-			log.Println("emit:", so.Emit("chat message", msg))
+			//这个没有问题
+			fmt.Println("chat message")
+			e := so.Emit("cn2222", "中文2")
+			log.Println(e)
+
+			log.Println("emit:", so.Emit("chat message", "中文输入法"))
 			so.BroadcastTo("chat", "chat message", msg)
+		})
+		// Socket.io acknowledgement example
+		// The return type may vary depending on whether you will return
+		// For this example it is "string" type
+		so.On("chat message with ack", func(msg string) string {
+			fmt.Println("chat message with ack")
+			return msg
 		})
 		so.On("disconnection", func() {
 			log.Println("on disconnect")
