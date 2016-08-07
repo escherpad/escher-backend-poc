@@ -1,6 +1,10 @@
 [package]
+authors = ["Ge Yang <yangge1987@gmail.com>"]
 name = "rust-chat-server"
 version = "0.1.0"
-authors = ["Ge Yang <yangge1987@gmail.com>"]
 
 [dependencies]
+hyper = "0.9.10"
+
+[dependencies.websocket]
+git = "https://github.com/cyderize/rust-websocket.git"
