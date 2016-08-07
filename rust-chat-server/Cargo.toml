@@ -1,0 +1,6 @@
+[package]
+name = "rust-chat-server"
+version = "0.1.0"
+authors = ["Ge Yang <yangge1987@gmail.com>"]
+
+[dependencies]
