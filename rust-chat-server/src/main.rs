@@ -22,7 +22,7 @@ fn http_handler(_: Request, response: Response<Fresh>) {
 fn main() {
     // Start listening for http connections
     thread::spawn(move || {
-        let http_server = HttpServer::http("127.0.0.1:8080").unwrap();
+        let http_server = HttpServer::http("127.0.0.1:2794").unwrap();
         http_server.handle(http_handler).unwrap();
     });
 
