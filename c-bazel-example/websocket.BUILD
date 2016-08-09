@@ -11,5 +11,6 @@ cc_library(
         "websocketpp/**/**/*.hpp"
     ]),
     copts = ["-Iexternal/websocketpp/websocketpp"],
+    linkopts = ["-pthread"],
     visibility = ["//visibility:public"],
 )
