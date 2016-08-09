@@ -10,6 +10,9 @@ cc_library(
         "websocketpp/**/*.hpp",
         "websocketpp/**/**/*.hpp"
     ]),
+    includes = glob([
+        "websocketpp/**/*.hpp"
+    ]),
     copts = ["-Iexternal/websocketpp/websocketpp"],
     linkopts = ["-pthread"],
     visibility = ["//visibility:public"],
