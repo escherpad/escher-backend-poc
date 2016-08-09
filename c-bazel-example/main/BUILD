@@ -12,3 +12,4 @@ cc_binary(
         "//lib:hello-greet",
     ],
 )
+
