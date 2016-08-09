@@ -11,13 +11,13 @@ new_http_archive(
 )
 
 bind(
-  name = 'websocketpp',
-  actual = '@websocketpp//:main',
+  name = "libwebsockets",
+  actual = "@libwebsockets//:main",
 )
 
-new_http_archive(
-    name = "websocketpp",
-    url = "https://github.com/zaphoyd/websocketpp/archive/0.7.0.zip",
+new_git_repository(
+    name = "libwebsockets",
+    remote = "https://github.com/warmcat/libwebsockets.git",
     build_file = "websocket.BUILD",
-    strip_prefix = "websocketpp-0.7.0",
+    tag = "v2.0.2"
 )

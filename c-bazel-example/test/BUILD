@@ -3,11 +3,11 @@ cc_test(
     srcs = ["hello-test.cc"],
     copts = [
         "-Iexternal/gtest/include",
-        "-Iexternal/websocketpp/websocketpp"
+        "-Iexternal/libwebsockets/lib"
     ],
     deps = [
         "@gtest//:main",
-        "@websocketpp//:main",
+        "@libwebsockets//:main",
         "//lib:hello-greet"
     ],
 )
