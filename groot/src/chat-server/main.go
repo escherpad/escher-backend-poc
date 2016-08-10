@@ -1,16 +1,15 @@
 package main
 
 import (
-	"io"
+	//"chat-server/handlers"
+	//"golang.org/x/net/websocket"
 	//"net/http"
-
-	"golang.org/x/net/websocket"
-	"net/http"
+	"fmt"
 )
 
-
 func main() {
-	http.Handle("/", websocket.Handler(echoHandler))
+	fmt.Println("this is working!")
+	//http.Handle("/", websocket.Handler(handlers.EchoHandler))
 	//http.Handle("/", http.FileServer(http.Dir(".")))
 	//err := http.ListenAndServe(":8080", nil)
 	//if err != nil {

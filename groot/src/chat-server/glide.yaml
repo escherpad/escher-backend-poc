@@ -1,4 +1,4 @@
-package: .
+package: chat-server
 import:
 - package: golang.org/x/net
   subpackages:

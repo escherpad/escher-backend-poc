@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"io"
 	"golang.org/x/net/websocket"
+	"io"
 )
 
 func EchoHandler(ws *websocket.Conn) {
